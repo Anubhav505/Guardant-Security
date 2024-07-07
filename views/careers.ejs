@@ -1,0 +1,99 @@
+<%= layout("layouts/boilerplate") %>
+<div>
+  <div class="overlay-container">
+    <img style=" width: 100%; height: 300px; object-fit: cover; opacity: 0.6;" src="https://www.security-guard.ca/wp-content/uploads/2015/01/IMG_7499.png">
+    <div class="overlay"></div>
+    <h1 class="overlay-name">CAREER WITH US</h1>
+  </div>
+  <div>
+    <div class="contact-form mb-3">
+      <h2 style="color: #11133b">Apply For Job</h2>
+      <br />
+      <p style="color: red">
+        Please fill up these details and send your resume.
+      </p>
+      <br />
+      <form action="">
+        <label for="name">Name *</label><br />
+        <input
+          id="name"
+          name="Name"
+          class="form-text form-control form-control-sm"
+          required
+        /><br />
+
+        <label for="email">Email *</label><br />
+        <input
+          type="email"
+          name="Email"
+          class="form-text form-control form-control-sm"
+          id="email"
+        /><br />
+
+        <label for="phone">Phone *</label><br />
+        <input
+          name="phone"
+          id="Phone"
+          class="form-text form-control form-control-sm"
+          required
+        /><br />
+
+        <label for="dob">Date Of Birth *</label><br />
+        <input
+          name="Date Of Birth"
+          id="dob"
+          class="form-text form-control form-control-sm"
+          required
+        /><br />
+
+        <label for="address">Address</label><br />
+        <input
+          name="Address"
+          id="address"
+          class="form-text form-control form-control-sm"
+        /><br />
+
+        <label for="ce">Current Employer</label>
+        <input
+          name="Current Employer"
+          id="ce"
+          class="form-text form-control form-control-sm"
+        /><br />
+
+        <label for="ypd">Your Present Designation *</label>
+        <input
+          name="Your Present Designation"
+          id="ypd"
+          class="form-text form-control form-control-sm"
+          required
+        /><br />
+
+        <label for="joe">Job experience *</label><br />
+        <input
+          name="Job Experience"
+          id="joe"
+          class="form-text form-control form-control-sm"
+        /><br />
+
+        <label for="comment" class="form-label">Make Your Comment</label><br />
+        <textarea
+          name="Make Your Comment"
+          id="comment"
+          rows="10"
+          class="textarea"
+          style="width: 100%"
+        ></textarea>
+
+        <br />
+
+        <br />
+
+        <label for="pdf">Upload Your Resume (.pdf/.docs file only) *</label
+        ><br />
+        <input type="file" name="Resume" id="pdf" required /><br /><br />
+
+        <button class="btn btn-danger">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
