@@ -119,12 +119,18 @@
 
 .contact-head-b {
   margin-left: 15rem;
+  margin-right: 15rem;
   padding: 4rem 0 4rem 0;
   font-weight: 450;
   font-size: large;
 }
 
 .contact-head-b h1 {
+  color: #11133b;
+  font-family: sans-serif;
+}
+
+.contact-head-b h3 {
   color: #11133b;
   font-family: sans-serif;
 }
@@ -187,7 +193,7 @@
   width: 100%;
   height: 200px; 
   object-fit: cover; 
-  border-radius: 14px;
+  /* border-radius: 14px; */
   border: solid 5px #f6e389;
   box-shadow: 5px 10px 10px black;
   transition: box-shadow 0.4s ease;
@@ -196,4 +202,19 @@
 
 .card-img:hover{
   box-shadow: 10px 20px 20px black;
+}
+
+/* SERVICES HOME */
+.services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  margin: 1rem;
+}
+
+.card:hover{
+  background-color: #FAB700;
 }
