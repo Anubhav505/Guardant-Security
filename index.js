@@ -20,8 +20,9 @@ app.get("/about", (req, res) => {
 });
 
 /* SERVICES */
-app.get("/services", (req, res) => {
-  res.render("services.ejs");
+/* SECURITY SERVICES */
+app.get("/security-services", (req, res) => {
+  res.render("services/securityServices.ejs");
 });
 
 /* GALLERY */
