@@ -1,11 +1,13 @@
+<link rel="stylesheet" href="/css/navbar.css" />
 <nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="/">
+  <div class="container-fluid position-relative">
+    <a class="navbar-brand me-5" href="/">
       <img
         src="https://images.unsplash.com/photo-1719425458375-3c23993b97d8?q=80&w=1971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="Logo"
         class="d-inline-block align-text-top"
-      />&nbsp;&nbsp;<span class="navbar-brand-name"><b>GUARDANT SECURITY</b></span>
+      />
+      <span class="navbar-brand-name"><b>GUARDANT SECURITY</b></span>
     </a>
     <button
       style="background-color: white"
@@ -21,9 +23,33 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/">HOME</a>
         <a class="nav-link" href="/about">ABOUT US</a>
-        <a class="nav-link" href="#">SERVICES</a>
+        <div class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdownMenuLink"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            SERVICES
+          </a>
+          <div
+            class="dropdown-menu bg-primary-subtle"
+            aria-labelledby="navbarDropdownMenuLink"
+          >
+            <a class="dropdown-item" href="/security-services">Security</a>
+            <a class="dropdown-item" href="https://guardantsecurity.com/iFMServices#event">Event Security and Management</a>
+            <a class="dropdown-item" href="#training">Training and Development</a>
+            <a class="dropdown-item" href="#supporting">Office Supporting</a>
+            <a class="dropdown-item" href="#staffing">Office Staffing</a>
+            <a class="dropdown-item" href="#nursing">Nursing & Patient Care</a>
+            <a class="dropdown-item" href="#consultancy">Consultancy</a>
+          </div>
+        </div>
         <a class="nav-link" href="/training">TRAINING</a>
         <a class="nav-link" href="/gallery">GALLERY</a>
         <a class="nav-link" href="/contact">CONTACT US</a>
