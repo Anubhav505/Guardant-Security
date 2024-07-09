@@ -10,85 +10,104 @@
   </div>
 
   <div class="cards-container">
-
-    <div>
-      <img src="/img/dignitaries/1.jpg" class="card-img" />
+    <div class="slides">
+      <div>
+        <img src="/img/dignitaries/1.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/4.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/6.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/7.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/9.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/10.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/13.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/15.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/16.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/17.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/18.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/19.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/20.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/21.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/22.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/23.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/24.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/25.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/26.jpg" class="card-img" />
+      </div>
+      <div>
+        <img src="/img/dignitaries/27.jpg" class="card-img" />
+      </div>
     </div>
-
-    <div>
-      <img src="/img/dignitaries/4.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/6.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/7.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/9.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/10.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/13.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/15.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/16.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/17.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/18.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/19.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/20.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/21.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/22.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/23.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/24.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/25.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/26.jpg" class="card-img" />
-    </div>
-
-    <div>
-      <img src="/img/dignitaries/27.jpg" class="card-img" />
+    <div class="button-container">
+      <button style="background-color: black; color: white;" id="prev">&#10094;</button>
+      <button style="background-color: black; color: white;" id="next">&#10095;</button>
     </div>
   </div>
+  <script>
+    let currentIndex = 0;
+    const slides = document.querySelector(".slides");
+    const slideCount = document.querySelectorAll(".slides div").length;
+
+    function showSlide(index) {
+      if (index >= slideCount) {
+        currentIndex = 0;
+      } else if (index < 0) {
+        currentIndex = slideCount - 1;
+      } else {
+        currentIndex = index;
+      }
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    document.getElementById("next").addEventListener("click", () => {
+      showSlide(currentIndex + 1);
+    });
+
+    document.getElementById("prev").addEventListener("click", () => {
+      showSlide(currentIndex - 1);
+    });
+
+    // Automatic slideshow with 3-second delay
+    function autoSlide() {
+      setInterval(() => {
+        showSlide(currentIndex + 1);
+      }, 3000); // Change interval time to 3000ms (3 seconds)
+    }
+
+    autoSlide(); // Start the automatic slideshow
+  </script>
 </div>

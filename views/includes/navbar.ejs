@@ -1,20 +1,35 @@
-<div class="navbar">
-  <div class="brand">
-    <a style="text-decoration: none; color: white" href="/">
+<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
       <img
         src="https://images.unsplash.com/photo-1719425458375-3c23993b97d8?q=80&w=1971&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        alt="BRAND IMAGE"
-      />&nbsp;&nbsp;<span><b>GUARDANT SECURITY</b></span>
+        alt="Logo"
+        class="d-inline-block align-text-top"
+      />&nbsp;&nbsp;<span class="navbar-brand-name"><b>GUARDANT SECURITY</b></span>
     </a>
+    <button
+      style="background-color: white"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        <a class="nav-link" href="/about">ABOUT US</a>
+        <a class="nav-link" href="#">SERVICES</a>
+        <a class="nav-link" href="/training">TRAINING</a>
+        <a class="nav-link" href="/gallery">GALLERY</a>
+        <a class="nav-link" href="/contact">CONTACT US</a>
+        <a class="nav-link" href="/service">SERVICE REQUEST</a>
+        <a class="nav-link" href="/careers">CAREERS</a>
+      </div>
+    </div>
   </div>
-  <div class="nav-options">
-    <a href="/">HOME</a>
-    <a href="/about">ABOUT US</a>
-    <a href="#">SERVICES</a>
-    <a href="/training">TRAINING</a>
-    <a href="/gallery">GALLERY</a>
-    <a href="/contact">CONTACT US</a>
-    <a href="/service">SERVICE REQUEST</a>
-    <a class="btn btn-danger" href="/careers">CAREERS</a>
-  </div>
-</div>
+</nav>

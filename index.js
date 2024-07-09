@@ -8,7 +8,6 @@ app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "/public")));
 
-
 /* HOME */
 app.get("/", (req, res) => {
   res.render("home.ejs");
@@ -20,9 +19,20 @@ app.get("/about", (req, res) => {
 });
 
 /* SERVICES */
+
 /* SECURITY SERVICES */
 app.get("/security-services", (req, res) => {
   res.render("services/securityServices.ejs");
+});
+
+/* I F M SERVICES */
+app.get("/iFMServices", (req, res) => {
+  res.render("services/iFMServices.ejs");
+});
+
+/* MAN POWER */
+app.get("/manPower", (req, res) => {
+  res.render("services/manPower.ejs");
 });
 
 /* GALLERY */
