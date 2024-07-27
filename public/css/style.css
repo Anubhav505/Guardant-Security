@@ -2,11 +2,15 @@
   font-family: "Montserrat", sans-serif;
 }
 
-h1{
+h1 {
   font-weight: bold;
 }
 
-h5{
+h2{
+  color: #11133b !important;
+}
+
+h5 {
   text-align: center;
   color: #11133b;
 }
@@ -29,79 +33,28 @@ li {
   }
 }
 
-.iFMServices div{
-  margin-bottom: 2rem;
+/* IFM */
+.ifmCards {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5rem 2rem 5rem 2rem;
+}
+
+.ifmCards div {
+  margin-top: 2rem;
+}
+
+.ifmCards div img {
+  width: 700px;
+  margin: 1rem 0;
 }
 
 @media (max-width: 600px) {
-  .iFMServices img{
+  .ifmCards div img {
     width: 100%;
   }
 }
-
-.iFMServices h2{
-  text-align: center;
-}
-
-/* NAVBAR */
-
-/* .navbar {
-  background-color: #11133b !important;
-  padding-left: 1rem;
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    padding-left: 0rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .navbar-nav {
-    margin-right: 5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.navbar-brand {
-  color: white;
-  display: flex;
-  align-items: center;
-}
-
-.navbar-brand:hover {
-  color: white;
-}
-
-.navbar-brand img {
-  height: 4rem;
-}
-
-@media (max-width: 600px) {
-  .navbar-brand img {
-    height: 3rem;
-  }
-  .navbar-toggler {
-    display: flex;
-    position: absolute;
-    right: 0;
-  }
-}
-
-.navbar-nav {
-  margin-left: 5rem;
-}
-
-.nav-link {
-  color: white;
-  font-weight: bold;
-}
-
-.nav-link:hover {
-  color: lightblue;
-} */
 
 /* FOOTER */
 
@@ -363,7 +316,7 @@ li {
   height: 270px;
   padding: 1rem;
   border: none;
-  border-radius: 14PX;
+  border-radius: 14px;
 }
 
 .card:hover {
@@ -382,7 +335,7 @@ li {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
   }
 
   .security-services-img-name {
@@ -395,8 +348,8 @@ li {
   width: 25rem;
 }
 
-@media(max-width:600px) {
-  .security-services div{
+@media (max-width: 600px) {
+  .security-services div {
     margin: 0 3rem 2rem 3rem;
     padding: 2rem;
   }
@@ -406,8 +359,8 @@ li {
   width: 25rem;
 }
 
-@media(max-width:600px) {
-  .security-services div img{
+@media (max-width: 600px) {
+  .security-services div img {
     width: 21rem;
   }
 }
