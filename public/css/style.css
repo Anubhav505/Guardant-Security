@@ -152,7 +152,7 @@ li {
   color: white;
   opacity: 0;
   z-index: 99;
-  animation: fadeIn 1s forwards 1s;
+  animation: fadeIn 2s forwards;
 }
 
 @keyframes fadeIn {
