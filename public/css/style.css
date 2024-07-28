@@ -48,11 +48,7 @@ li {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 0rem 2rem 5rem 2rem;
-}
-
-.ifmCards div {
-  margin-top: 2rem;
+  margin: 5rem 2rem 5rem 2rem;
 }
 
 .ifmCards div h2 {
