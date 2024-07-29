@@ -11,7 +11,7 @@
   </div>
   <div class="space" id="event"></div>
   <div class="ifmCards">
-    <div>
+    <div class="hidden">
       <h2>Event Security and Management Services</h2>
       <img src="/img/securityServices/esm.jpg" alt="" />
       <p>
@@ -26,7 +26,7 @@
       </p>
     </div>
     <div class="space" id="training"></div>
-    <div>
+    <div class="hidden">
       <h2>Training and Development Services</h2>
       <img src="img/securityServices/4.jpg" alt="" />
       <p>
@@ -43,7 +43,7 @@
       </p>
     </div>
     <div class="space" id="supporting"></div>
-    <div>
+    <div class="hidden">
       <h2>Office Supporting Services</h2>
       <img src="/img/securityServices/ofs.jpg" alt="" />
       <p>
@@ -58,7 +58,7 @@
     </div>
 
     <div class="space" id="staffing"></div>
-      <div>
+      <div class="hidden">
         <h2>Office Staffing Services</h2>
         <img src="/img/securityServices/oss.jpg" alt="" />
         <p>
@@ -73,7 +73,7 @@
         </p>
       </div>
  <div class="space" id="nursing"></div>
-      <div >
+      <div class="hidden">
         <h2>Nursing & Patient Care Services</h2>
         <img src="/img/securityServices/npcs.jpg" alt="" />
         <p>
@@ -87,7 +87,7 @@
         </p>
       </div>
 <div class="space" id="consultancy"></div>
-      <div >
+      <div class="hidden">
         <h2>Consultancy Services</h2>
         <img src="/img/securityServices/cs.jpg" alt="" />
         <p>
@@ -106,3 +106,21 @@
     </div>
   </div>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const hiddenElements = document.querySelectorAll('.hidden');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 200); // Delay each by 0.2s
+                }
+            });
+        }, { threshold: 0.1 });
+
+        hiddenElements.forEach(el => observer.observe(el));
+    });
+</script>
