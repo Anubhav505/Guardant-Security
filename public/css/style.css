@@ -1,3 +1,11 @@
+body {
+  background-image: url(/img/bg/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -225,10 +233,6 @@ li {
 
 /* CONTACT US */
 
-.form-bg {
-  background-color: #f0f0f0;
-}
-
 .contact-form {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -278,7 +282,7 @@ li {
   width: 100%;
   height: auto;
   padding: 1rem;
-  background-color: #f9f9ff;
+  /* background-color: #f9f9ff; */
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin: 5rem 0 5rem 0;
