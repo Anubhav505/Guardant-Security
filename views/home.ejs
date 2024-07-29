@@ -1,16 +1,18 @@
 <%= layout("layouts/boilerplate") %>
+
 <div class="home">
   <div class="overlay-container home-img">
-  <img
-    class="zoom-image"
-    src="/img/main/home.jpg"
-    alt="Main Image"
-  />
-  <div class="overlay"></div>
-  <h1 class="overlay-name">
-    Ensuring Safety <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enhancing Lives
-  </h1>
-</div>
+    <img
+      class="zoom-image"
+      src="/img/main/home.jpg"
+      alt="Main Image"
+    />
+    <div class="overlay"></div>
+    <h1 class="overlay-name">
+      Ensuring Safety <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enhancing Lives
+    </h1>
+  </div>
+
   <div class="contact-head-b hidden" style="background-color: #f9f9ff; margin-top: 4rem; margin-bottom: 4rem;">
     <p style="color: rgb(176, 152, 16);">WELCOME TO</p>
     <h1 style="color: #11133b;">GUARDANT SECURITY</h1><br><br>
@@ -26,52 +28,40 @@
     </p>
     <br />
     <a class="btn btn-danger" href="/about">READ MORE</a>
-</div>
-<hr>
-<div class="hidden" style="display: flex; justify-content: center; align-items: center; margin-top: 8rem; margin-bottom: 3rem;">
+  </div>
+
+  <hr>
+
+  <div class="hidden" style="display: flex; justify-content: center; align-items: center; margin-top: 8rem; margin-bottom: 3rem;">
     <h1 style="color: #11133b;">OUR SERVICES</h1>
+  </div>
+
+  <div class="services">
+    <div class="card hidden" style="width: 20rem">
+      <a href="/security-services" style="text-decoration: none; color: black;">
+        <img src="https://preview.colorlib.com/theme/security/img/s2.jpg.webp" class="card-img-top" alt="Security Services" style="border-radius: 14px" />
+        <div class="card-body">
+          <b><p style="font-size: large; text-align: center;">SECURITY SERVICES</p></b>
+        </div>
+      </a>
+    </div>
+
+    <div class="card hidden" style="width: 20rem">
+      <a href="/iFMServices" style="text-decoration: none; color: black;">
+        <img src="https://preview.colorlib.com/theme/security/img/s1.jpg.webp" class="card-img-top" alt="Integrated Facility Management" style="border-radius: 14px" />
+        <div class="card-body">
+          <b><p style="font-size: large; text-align: center;">INTEGRATED FACILITY MANAGEMENT SERVICES</p></b>
+        </div>
+      </a>
+    </div>
+
+    <div class="card hidden" style="width: 20rem">
+      <a href="/manPower" style="text-decoration: none; color: black;">
+        <img src="https://preview.colorlib.com/theme/security/img/s3.jpg.webp" class="card-img-top" alt="Equipment Related Services" style="border-radius: 14px" />
+        <div class="card-body">
+          <b><p style="font-size: large; text-align: center;">EQUIPMENT RELATED SERVICES</p></b>
+        </div>
+      </a>
+    </div>
+  </div>
 </div>
-<div class="services">
-    <div class="card hidden" style="width: 20rem">
-        <a href="/security-services" style="text-decoration: none; color: black;">
-        <img src="https://preview.colorlib.com/theme/security/img/s2.jpg.webp" class="card-img-top" alt="..." style="border-radius: 14PX" />
-        <div class="card-body">
-            <b><p style="font-size: large; text-align: center;">SECURITY SERVICES</p></b>
-        </div>
-        </a>
-    </div>
-    <div class="card hidden" style="width: 20rem">
-        <a href="/iFMServices" style="text-decoration: none; color: black;">
-        <img src="https://preview.colorlib.com/theme/security/img/s1.jpg.webp" class="card-img-top" alt="..." style="border-radius: 14PX" />
-        <div class="card-body">
-            <b><p style="font-size: large; text-align: center;">INTEGRATED FACILITY MANAGEMENT SERVICES</p></b>
-        </div>
-        </a>
-    </div>
-    <div class="card hidden" style="width: 20rem">
-        <a href="/manPower" style="text-decoration: none; color: black;">
-        <img src="https://preview.colorlib.com/theme/security/img/s3.jpg.webp" class="card-img-top" alt="..." style="border-radius: 14PX" />
-        <div class="card-body">
-            <b><p style="font-size: large; text-align: center;">EQUIPMENT RELATED SERVICES</p></b>
-        </div>
-        </a>
-    </div>
-</div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const hiddenElements = document.querySelectorAll('.hidden');
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry, index) => {
-                if (entry.isIntersecting) {
-                    setTimeout(() => {
-                        entry.target.classList.add('visible');
-                    }, index * 200); // Delay each by 0.2s
-                }
-            });
-        }, { threshold: 0.1 });
-
-        hiddenElements.forEach(el => observer.observe(el));
-    });
-</script>
