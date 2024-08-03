@@ -1,67 +1,112 @@
-<%= layout("layouts/boilerplate") %>
-
-<div class="home">
-  <div class="overlay-container home-img">
-    <img
-      class="zoom-image"
-      src="/img/main/home.jpg"
-      alt="Main Image"
-    />
-    <div class="overlay"></div>
-    <h1 class="overlay-name">
-      Ensuring Safety <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Enhancing Lives
-    </h1>
-  </div>
-
-  <div class="contact-head-b hidden" style=" margin-top: 4rem; margin-bottom: 4rem;">
-    <p style="color: rgb(176, 152, 16);">WELCOME TO</p>
-    <h1 style="color: #11133b;">GUARDANT SECURITY</h1><br><br>
-    <p>
-      Guardant Security Pvt. Ltd., based in Dwarka, Delhi, is a premier provider
-      of integrated security and facility management solutions. We have
-      established ourselves as a leading organization specializing in Security
-      Services, Integrated Facility Management, Manpower Sourcing, and HR
-      Solutions across India. Our commitment to excellence is highlighted by our
-      ISO 9001:2015 certification, reflecting our dedication to delivering
-      high-quality services that meet industry standards. Recognized as one of
-      the top-rated service providers in the National Capital Region.
-    </p>
-    <br />
-    <a class="btn btn-danger" href="/about">READ MORE</a>
-  </div>
-
-  <hr>
-
-  <div class="hidden" style="display: flex; justify-content: center; align-items: center; margin-top: 8rem; margin-bottom: 3rem;">
-    <h1 style="color: #11133b;">OUR SERVICES</h1>
-  </div>
-
-  <div class="services">
-    <div class="card hidden" style="width: 20rem">
-      <a href="/security-services" style="text-decoration: none; color: black;">
-        <img src="https://preview.colorlib.com/theme/security/img/s2.jpg.webp" class="card-img-top" alt="Security Services" style="border-radius: 14px" />
-        <div class="card-body">
-          <b><p style="font-size: large; text-align: center;">SECURITY SERVICES</p></b>
-        </div>
-      </a>
+<div id="loader">
+        <div class="loader-img"></div>
+    </div>
+<div id="content">
+  <%= layout("layouts/boilerplate") %>
+  <div class="home">
+    <div class="overlay-container home-img">
+      <img class="zoom-image" src="/img/main/home.jpg" alt="Main Image" />
+      <div class="overlay"></div>
+      <h1 class="overlay-name">
+        Ensuring Safety <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Enhancing Lives
+      </h1>
     </div>
 
-    <div class="card hidden" style="width: 20rem">
-      <a href="/iFMServices" style="text-decoration: none; color: black;">
-        <img src="https://preview.colorlib.com/theme/security/img/s1.jpg.webp" class="card-img-top" alt="Integrated Facility Management" style="border-radius: 14px" />
-        <div class="card-body">
-          <b><p style="font-size: large; text-align: center;">INTEGRATED FACILITY MANAGEMENT SERVICES</p></b>
-        </div>
-      </a>
+    <div
+      class="contact-head-b hidden"
+      style="margin-top: 4rem; margin-bottom: 4rem; background-color:#f5f5f7 ;"
+    >
+      <p style="color: rgb(176, 152, 16)">WELCOME TO</p>
+      <h1 style="color: #11133b">GUARDANT SECURITY</h1>
+      <br /><br />
+      <p>
+        Guardant Security Pvt. Ltd., based in Dwarka, Delhi, is a premier
+        provider of integrated security and facility management solutions. We
+        have established ourselves as a leading organization specializing in
+        Security Services, Integrated Facility Management, Manpower Sourcing,
+        and HR Solutions across India. Our commitment to excellence is
+        highlighted by our ISO 9001:2015 certification, reflecting our
+        dedication to delivering high-quality services that meet industry
+        standards. Recognized as one of the top-rated service providers in the
+        National Capital Region.
+      </p>
+      <br />
+      <a class="btn btn-danger" href="/about">READ MORE</a>
     </div>
 
-    <div class="card hidden" style="width: 20rem">
-      <a href="/manPower" style="text-decoration: none; color: black;">
-        <img src="https://preview.colorlib.com/theme/security/img/s3.jpg.webp" class="card-img-top" alt="Equipment Related Services" style="border-radius: 14px" />
-        <div class="card-body">
-          <b><p style="font-size: large; text-align: center;">EQUIPMENT RELATED SERVICES</p></b>
-        </div>
-      </a>
+    <hr />
+
+    <div
+      class="hidden"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+      "
+    >
+      <h1 style="color: #11133b">OUR SERVICES</h1>
+    </div>
+
+    <div class="services">
+      <div class="card hidden" style="width: 20rem">
+        <a
+          href="/security-services"
+          style="text-decoration: none; color: black"
+        >
+          <img
+            src="https://preview.colorlib.com/theme/security/img/s2.jpg.webp"
+            class="card-img-top"
+            alt="Security Services"
+            style="border-radius: 14px"
+          />
+          <div class="card-body">
+            <b
+              ><p style="font-size: large; text-align: center">
+                SECURITY SERVICES
+              </p></b
+            >
+          </div>
+        </a>
+      </div>
+
+      <div class="card hidden" style="width: 20rem">
+        <a href="/iFMServices" style="text-decoration: none; color: black">
+          <img
+            src="https://preview.colorlib.com/theme/security/img/s1.jpg.webp"
+            class="card-img-top"
+            alt="Integrated Facility Management"
+            style="border-radius: 14px"
+          />
+          <div class="card-body">
+            <b
+              ><p style="font-size: large; text-align: center">
+                INTEGRATED FACILITY MANAGEMENT SERVICES
+              </p></b
+            >
+          </div>
+        </a>
+      </div>
+
+      <div class="card hidden" style="width: 20rem">
+        <a href="/manPower" style="text-decoration: none; color: black">
+          <img
+            src="https://preview.colorlib.com/theme/security/img/s3.jpg.webp"
+            class="card-img-top"
+            alt="Equipment Related Services"
+            style="border-radius: 14px"
+          />
+          <div class="card-body">
+            <b
+              ><p style="font-size: large; text-align: center">
+                EQUIPMENT RELATED SERVICES
+              </p></b
+            >
+          </div>
+        </a>
+      </div>
     </div>
   </div>
 </div>

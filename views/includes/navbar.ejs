@@ -3,23 +3,57 @@
   <div class="container-fluid position-relative">
     <a class="navbar-brand me-5" href="/">
       <img
-        src="/img/navbar/nlogo.jpg"
+        src="/img/reload/icon.png"
         alt="Logo"
         class="d-inline-block align-text-top"
       />
       <span class="navbar-brand-name"><b>GUARDANT SECURITY</b></span>
     </a>
     <button
-      style="background-color: white"
       class="navbar-toggler"
-      type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNavAltMarkup"
       aria-controls="navbarNavAltMarkup"
       aria-expanded="false"
       aria-label="Toggle navigation"
+      onclick="toggleSvg()"
     >
-      <span class="navbar-toggler-icon"></span>
+      <div class="svg-container">
+        <!-- Hamburger Menu Icon -->
+
+        <svg
+          id="svg-hamburger"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M19 9l-7 7-7-7" />
+        </svg>
+
+        <!-- Cross Icon -->
+        <svg
+          id="svg-cross"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="white"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M19 15l-7-7-7 7" />
+        </svg>
+      </div>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
@@ -38,16 +72,40 @@
             SERVICES
           </a>
           <div
-            class="dropdown-menu bg-primary-subtle"
+            class="dropdown-menu"
             aria-labelledby="navbarDropdownMenuLink"
           >
             <a class="dropdown-item" href="/security-services">Security</a>
-            <a class="dropdown-item" href="https://guardantsecurity.com/iFMServices#event">Event Security and Management</a>
-            <a class="dropdown-item" href="https://guardantsecurity.com/iFMServices#training">Training and Development</a>
-            <a class="dropdown-item" href="https://guardantsecurity.com/iFMServices#supporting">Office Supporting</a>
-            <a class="dropdown-item" href="https://guardantsecurity.com/iFMServices#staffing">Office Staffing</a>
-            <a class="dropdown-item" href="https://guardantsecurity.com/iFMServices#nursing">Nursing & Patient Care</a>
-            <a class="dropdown-item" href="https://guardantsecurity.com/iFMServices#consultancy">Consultancy</a>
+            <a
+              class="dropdown-item"
+              href="https://guardantsecurity.com/iFMServices#event"
+              >Event Security and Management</a
+            >
+            <a
+              class="dropdown-item"
+              href="https://guardantsecurity.com/iFMServices#training"
+              >Training and Development</a
+            >
+            <a
+              class="dropdown-item"
+              href="https://guardantsecurity.com/iFMServices#supporting"
+              >Office Supporting</a
+            >
+            <a
+              class="dropdown-item"
+              href="https://guardantsecurity.com/iFMServices#staffing"
+              >Office Staffing</a
+            >
+            <a
+              class="dropdown-item"
+              href="https://guardantsecurity.com/iFMServices#nursing"
+              >Nursing & Patient Care</a
+            >
+            <a
+              class="dropdown-item"
+              href="https://guardantsecurity.com/iFMServices#consultancy"
+              >Consultancy</a
+            >
           </div>
         </div>
         <a class="nav-link" href="/training">TRAINING</a>
@@ -59,3 +117,9 @@
     </div>
   </div>
 </nav>
+<script>
+  function toggleSvg() {
+    var button = document.querySelector(".navbar-toggler");
+    button.classList.toggle("active");
+  }
+</script>
