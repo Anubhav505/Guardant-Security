@@ -1,13 +1,33 @@
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
 <div id="loader">
-        <div class="loader-img"></div>
-    </div>
+  <div class="loader-img"></div>
+</div>
 <div id="content">
   <%= layout("layouts/boilerplate") %>
   <div class="home">
-    <div class="overlay-container home-img">
-      <img class="zoom-image" src="/img/main/home.jpg" alt="Main Image" />
+    <div class="overlay-container">
+      <img
+        class="zoom-image"
+        style="width: 100%; height: 300px; object-fit: cover; opacity: 0.6"
+        src="https://images.unsplash.com/photo-1514971126075-758e7d825812?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      />
       <div class="overlay"></div>
-      <h1 class="overlay-name">
+
+      <h1
+        style="font-family: Calligraffitti, cursive; color: #b9a42f"
+        class="overlay-name"
+      >
         Ensuring Safety <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Enhancing Lives
       </h1>
@@ -15,7 +35,7 @@
 
     <div
       class="contact-head-b hidden"
-      style="margin-top: 4rem; margin-bottom: 4rem; background-color:#f5f5f7 ;"
+      style="margin-top: 4rem; margin-bottom: 4rem; background-color: #f5f5f7"
     >
       <p style="color: rgb(176, 152, 16)">WELCOME TO</p>
       <h1 style="color: #11133b">GUARDANT SECURITY</h1>
@@ -35,7 +55,7 @@
       <a class="btn btn-danger" href="/about">READ MORE</a>
     </div>
 
-    <hr />
+    <hr id="event"/>
 
     <div
       class="hidden"
@@ -110,3 +130,4 @@
     </div>
   </div>
 </div>
+<script src="js/scroll.js"></script>

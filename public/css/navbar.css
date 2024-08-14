@@ -1,113 +1,88 @@
-.navbar {
-  padding: 10px 16px;
-  background-color: rgba(0, 0, 0, 0.5) !important; /* Semi-transparent color */
-  backdrop-filter: blur(20px); /* Adjust the blur radius */
-}
-
-.nav-link {
-  color: white;
-}
-
-.nav-link:hover {
-  color: white;
-}
-
-.nav-link:focus {
-  color: #f6e389 !important;
-}
-
-.navbar-brand {
+/* NAVBAR */
+nav {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 10px 40px;
+  position: fixed;
+  top: 0;
+  z-index: 9999999999;
+  transition: background-color 0.3s ease;
+}
+#brand {
+  color: white;
+  text-decoration: none;
+  z-index: 99999999999999;
+}
+.nav-right {
+  color: white;
+  font-size: 25px;
+}
+nav.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
   color: white;
 }
 
-.navbar-brand img {
-  height: 3rem;
-  margin-right: 10px;
-}
-
-.navbar-brand-name {
-  margin-right: 10px;
-
-  font-size: 1rem;
-}
-
-.navbar-brand:hover {
-  color: white;
-}
-
-.navbar-toggler {
-  border: none;
-  position: absolute;
-  top: 10px;
-  right: 16px;
-}
-
-.navbar-toggler:focus {
-  outline: none;
-  box-shadow: none;
-}
-
-.navbar-nav {
-  margin-left: auto;
-}
-
-@media (max-width: 600px) {
-  .navbar-nav {
-    display: flex;
-    align-items: center;
-  }
-}
-
-.collapse a {
-  font-weight: bold;
-}
-
-/* Hide the cross icon by default */
-#svg-cross {
-  opacity: 0;
-  transform: scale(0.5);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Show the hamburger icon by default */
-#svg-hamburger {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-/* Toggle styles when the button is active */
-.navbar-toggler.active #svg-hamburger {
-  opacity: 0;
-  transform: scale(0.5);
-}
-
-.navbar-toggler.active #svg-cross {
-  opacity: 1;
-  transform: scale(1);
-}
-
-
-/* Ensure the container is positioned relatively */
-.svg-container {
-  position: relative;
-  width: 24px;
-  height: 24px;
-}
-
-/* Position SVG icons absolutely within the container */
-.svg-container svg {
-  position: absolute;
+/* MENU FULL PAGE */
+.menu-options {
+  position: fixed;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e21;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  opacity: 0; 
+  transform: translateY(-100%);
+  z-index: 99999999;
 }
-
-.dropdown-menu{
-  background-color: transparent;
-  border: none;
+.menu-options div {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0;
 }
-.dropdown-item{
+.menu-options div a {
   color: white;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 500;
+}
+.menu-options div a:after {
+  content: "";
+  position: relative;
+  bottom: 10px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #b9a42f;
+  border-radius: 5px;
+  display: block;
+  transition: width 0.5s ease;
+}
+.menu-options div a:hover:after {
+  width: 100%;
+}
+.menu-options div a:hover {
+  color: #b9a42f;
+}
+.menu-options.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.menu,
+.menu2 {
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .menu-options div a {
+    font-size: 35px;
+  }
+  .menu-options div a:after {
+    display: none;
+  }
 }
