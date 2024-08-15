@@ -35,7 +35,7 @@ nav.scrolled {
   background-color: #000000;
   transition: opacity 0.3s ease, transform 0.3s ease;
   opacity: 0; 
-  transform: translateY(-100%);
+  transform: translateY(100%);
   z-index: 99999999;
 }
 .menu-options div {
@@ -45,7 +45,7 @@ nav.scrolled {
   justify-content: center;
   align-items: center;
   padding: 80px 0;
-  line-height: 100px;
+  line-height: 80px;
   letter-spacing: -1px;
 }
 .menu-options div a {
@@ -57,7 +57,7 @@ nav.scrolled {
 .menu-options div a:after {
   content: "";
   position: relative;
-  bottom: 10px;
+  bottom: 1px;
   left: 0;
   width: 0;
   height: 3px;

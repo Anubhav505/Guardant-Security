@@ -250,7 +250,6 @@ li {
   width: 100%;
   height: auto;
   padding: 1rem;
-  /* background-color: #f9f9ff; */
   padding-top: 2rem;
   padding-bottom: 2rem;
   margin: 5rem 0 5rem 0;
@@ -327,7 +326,6 @@ li {
   height: 270px;
   padding: 1rem;
   border: none;
-  border-radius: 14px;
 }
 
 .card:hover {
